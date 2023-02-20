@@ -15,7 +15,7 @@ public class CurrentConditionsPage {
     //Locators
 
     //Apply as Developer Button
-    @FindBy(xpath = "//div[contains(text(),'Clear')]")
+    @FindBy(xpath = "//body/div[1]/div[5]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]")
     private WebElement weatherText;
 
     @FindBy(xpath = "//h1[contains(text(),'Current Weather')]")

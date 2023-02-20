@@ -6,12 +6,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import webpages.CurrentConditionsPage;
 
 import java.util.concurrent.TimeUnit;
 
 public class CurrentConditionTest {
     WebDriver driver;
+    WebDriver opts;
 
     @Before
     public void setup() {
