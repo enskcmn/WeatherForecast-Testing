@@ -10,7 +10,7 @@ import webpages.CurrentConditionsPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class ApplyAsDeveloperTest {
+public class CurrentConditionTest {
     WebDriver driver;
 
     @Before
