@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Weather App Suite" verbose="1" >
+    <test name="Cloud Tests">
+        <classes>
+            <class name="com.example.tests.CurrentConditionTest"/>
+        </classes>
+    </test>
+</suite>
