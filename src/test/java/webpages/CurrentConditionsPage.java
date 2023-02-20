@@ -30,10 +30,8 @@ public class CurrentConditionsPage {
     }
 
     public void getWeatherText() {
-
         String weatherTxt = weatherText.getText();
         System.out.println(weatherTxt);
-
     }
     public boolean isPageOpened(){
         //Assertion
