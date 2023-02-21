@@ -1,21 +1,20 @@
 package com.example.tests;
 
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import webpages.CurrentConditionsPage;
 
 import java.util.concurrent.TimeUnit;
 
 public class CurrentConditionTest {
     WebDriver driver;
-    WebDriver opts;
+    //WebDriver opts;
 
-    @Before
+    @BeforeTest
     public void setup() {
         //use Chrome Driver
         driver = new ChromeDriver();
@@ -24,8 +23,8 @@ public class CurrentConditionTest {
     }
 
     @Test
-    public void applyAsDeveloper() {
-        //Create object of HomePage Class
+    public void isCurrentWeatherPageOpened() {
+
         CurrentConditionsPage currentConditionsPage = new CurrentConditionsPage(driver);
         currentConditionsPage.getWeatherText();
 
@@ -34,7 +33,7 @@ public class CurrentConditionTest {
 
     }
 
-    @After
+    @AfterTest
     public void close() {
         driver.close();
     }
